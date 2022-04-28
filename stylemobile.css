@@ -1,0 +1,335 @@
+body {
+    vertical-align: middle;
+    align-items: center;
+    text-align: center;
+    background-color: rgb(252, 250, 240);
+}
+
+#conteiner {
+    vertical-align: middle;
+    align-items: center;
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    margin: 1;
+}
+
+#ascendente {
+    display: none;
+}
+
+.img_signos {
+    padding: 1pt 9pt 12pt 9pt;
+}
+
+.Grid {
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    margin: 1;
+}
+
+.Grid-cell {
+    flex: 1;
+    font-size: 12px;
+}
+
+.Grid--flexCells>.Grid-cell {
+    display: flex;
+}
+
+.Grid--top {
+    align-items: flex-start;
+}
+
+.Grid--bottom {
+    align-items: flex-end;
+}
+
+.Grid--center {
+    align-items: center;
+}
+
+.Grid--justifyCenter {
+    justify-content: center;
+}
+
+.Grid-cell--top {
+    align-self: flex-start;
+}
+
+.Grid-cell--bottom {
+    align-self: flex-end;
+}
+
+.Grid-cell--center {
+    align-self: center;
+}
+
+.Grid-cell--autoSize {
+    flex: none;
+}
+
+.Grid--fit>.Grid-cell {
+    flex: 1;
+}
+
+.Grid--full>.Grid-cell {
+    flex: 0 0 100%;
+}
+
+.Grid--1of2>.Grid-cell {
+    flex: 0 0 50%;
+}
+
+.Grid--1of3>.Grid-cell {
+    flex: 0 0 33.3333%;
+}
+
+.Grid--1of4>.Grid-cell {
+    flex: 0 0 25%;
+}
+
+@media (--break-sm) {
+    .small-Grid--fit>.Grid-cell {
+        flex: 1;
+    }
+    .small-Grid--full>.Grid-cell {
+        flex: 0 0 100%;
+    }
+    .small-Grid--1of2>.Grid-cell {
+        flex: 0 0 50%;
+    }
+    .small-Grid--1of3>.Grid-cell {
+        flex: 0 0 33.3333%;
+    }
+    .small-Grid--1of4>.Grid-cell {
+        flex: 0 0 25%;
+    }
+}
+
+@media (--break-md) {
+    .med-Grid--fit>.Grid-cell {
+        flex: 1;
+    }
+    .med-Grid--full>.Grid-cell {
+        flex: 0 0 100%;
+    }
+    .med-Grid--1of2>.Grid-cell {
+        flex: 0 0 50%;
+    }
+    .med-Grid--1of3>.Grid-cell {
+        flex: 0 0 33.3333%;
+    }
+    .med-Grid--1of4>.Grid-cell {
+        flex: 0 0 25%;
+    }
+}
+
+@media (--break-lg) {
+    .large-Grid--fit>.Grid-cell {
+        flex: 1;
+    }
+    .large-Grid--full>.Grid-cell {
+        flex: 0 0 100%;
+    }
+    .large-Grid--1of2>.Grid-cell {
+        flex: 0 0 50%;
+    }
+    .large-Grid--1of3>.Grid-cell {
+        flex: 0 0 33.3333%;
+    }
+    .large-Grid--1of4>.Grid-cell {
+        flex: 0 0 25%;
+    }
+}
+
+.Grid--gutters {
+    margin: -1em 0 1em -1em;
+}
+
+.Grid--gutters>.Grid-cell {
+    padding: 1em 0 0 1em;
+}
+
+.Grid--guttersLg {
+    margin: -1.5em 0 1.5em -1.5em;
+}
+
+.Grid--guttersLg>.Grid-cell {
+    padding: 1.5em 0 0 1.5em;
+}
+
+.Grid--guttersXl {
+    margin: -2em 0 2em -2em;
+}
+
+.Grid--guttersXl>.Grid-cell {
+    padding: 2em 0 0 2em;
+}
+
+@media (--break-sm) {
+    .small-Grid--gutters {
+        margin: -1em 0 1em -1em;
+    }
+    .small-Grid--gutters>.Grid-cell {
+        padding: 1em 0 0 1em;
+    }
+    .small-Grid--guttersLg {
+        margin: -1.5em 0 1.5em -1.5em;
+    }
+    .small-Grid--guttersLg>.Grid-cell {
+        padding: 1.5em 0 0 1.5em;
+    }
+    .small-Grid--guttersXl {
+        margin: -2em 0 2em -2em;
+    }
+    .small-Grid--guttersXl>.Grid-cell {
+        padding: 2em 0 0 2em;
+    }
+}
+
+@media (--break-md) {
+    .med-Grid--gutters {
+        margin: -1em 0 1em -1em;
+    }
+    .med-Grid--gutters>.Grid-cell {
+        padding: 1em 0 0 1em;
+    }
+    .med-Grid--guttersLg {
+        margin: -1.5em 0 1.5em -1.5em;
+    }
+    .med-Grid--guttersLg>.Grid-cell {
+        padding: 1.5em 0 0 1.5em;
+    }
+    .med-Grid--guttersXl {
+        margin: -2em 0 2em -2em;
+    }
+    .med-Grid--guttersXl>.Grid-cell {
+        padding: 2em 0 0 2em;
+    }
+}
+
+@media (--break-lg) {
+    .large-Grid--gutters {
+        margin: -1em 0 1em -1em;
+    }
+    .large-Grid--gutters>.Grid-cell {
+        padding: 1em 0 0 1em;
+    }
+    .large-Grid--guttersLg {
+        margin: -1.5em 0 1.5em -1.5em;
+    }
+    .large-Grid--guttersLg>.Grid-cell {
+        padding: 1.5em 0 0 1.5em;
+    }
+    .large-Grid--guttersXl {
+        margin: -2em 0 2em -2em;
+    }
+    .large-Grid--guttersXl>.Grid-cell {
+        padding: 2em 0 0 2em;
+    }
+}
+
+h1 {
+    font-size: 20px;
+    color: black;
+}
+
+#periodo {
+    border-radius: 33%;
+    font-size: 12pt;
+    margin-left: 3pt;
+    margin-right: 3pt;
+    text-align: center;
+    vertical-align: middle;
+    background-color: rgb(240, 181, 143);
+    cursor: pointer;
+}
+
+#ascendentes {
+    padding: 1px 1px 0px;
+    text-align: center;
+}
+
+#solarescolhido {
+    padding: 0px 0px 12pt;
+}
+
+#tres_datas_ascendentes {
+    margin: 0pt;
+    margin-bottom: 100pt;
+    display: flex;
+    text-align: center;
+    width: auto;
+    height: 50pt;
+    line-height: 50pt;
+}
+
+#hora {
+    margin-top: 20pt;
+    margin-bottom: 10pt;
+    height: 50px;
+    width: 150px;
+    text-align: center;
+    justify-items: center;
+    font-size: 33pt;
+}
+
+#btn {
+    margin-bottom: 20pt;
+    height: 30pt;
+    width: 80pt;
+    text-align: center;
+    justify-items: center;
+    font-size: 20pt;
+}
+
+.img_signos {
+    width: 60pt;
+    height: 60pt;
+}
+
+#img_segundapag {
+    height: 100pt;
+    width: 100pt;
+}
+
+#img {
+    width: 333px;
+    align-items: center;
+    text-align: center;
+    vertical-align: middle;
+    text-justify: distribute-all-lines;
+}
+
+#txt_signo {
+    align-items: center;
+    text-align: justify;
+    align-self: center;
+    justify-content: center;
+}
+
+#txt_asc {
+    margin-top: 33pt;
+}
+
+h1#add {
+    font-size: 33pt;
+}
+
+#txt_asc {
+    align-items: center;
+    text-align: justify;
+    align-self: center;
+    justify-content: center;
+}
+
+#txt_sol_asc {
+    align-items: center;
+    text-align: justify;
+    align-self: center;
+    justify-content: center;
+}

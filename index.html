@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+
+    <script data-ad-client="ca-pub-6324170101247186" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu Ascendente e Signo Solar</title>
+    <meta name="description" content="Descubra seu ascendente e signo solar e outras curiosidades, de maneira simples e rapida">
+
+    <link rel="stylesheet" href="style.css" media="screen and (min-width:641px)">
+    <link rel="stylesheet" href="stylemobile.css" media="screen and (max-width:640px)">
+</head>
+
+<body>
+
+    <div id="#conteiner">
+
+        <h1>SIGNOS E ASCENDENTES</h1>
+
+
+        <label id="solicitaçaosol">ESCOLHA O SIGNO SOLAR CORRESPONDENTE A DATA DE NASCIMENTO:</label>
+
+        <div id="solar">
+            <div style="padding: 1em 0em 0em;" class="Grid" id="linha1signos" onselectstart="return false">
+
+
+                <div class="Grid-cell" id="aquario" onmouseover="signoescolhido('AQUÁRIO')" onmouseout="restartcolor()" onclick="clicksigno('aquario')">
+                    <strong>21/01 à 19/02</strong><img alt="" class="img_signos" id="img_aquario" width="90" height="90" src="img/aquario-min.svg" />
+                </div>
+
+                <div class="Grid-cell" id="peixes" onmouseover="signoescolhido('PEIXES')" onmouseout="restartcolor()" onclick="clicksigno('peixes')">
+                    <strong>20/02 à 20/03</strong><img alt="" class="img_signos" id="img_peixes" width="90" height="90" src="img/peixes-min.svg" />
+                </div>
+
+                <div class="Grid-cell" id="aries" onmouseover="signoescolhido('ÁRIES')" onmouseout="restartcolor()" onclick="clicksigno('aries')">
+                    <strong>21/03 à 20/04</strong><img alt="" class="img_signos" id="img_aries" width="90" height="90" src="img/aries-min.svg" />
+                </div>
+
+                <div class="Grid-cell" id="touro" onmouseover="signoescolhido('TOURO')" onmouseout="restartcolor()" onclick="clicksigno('touro')">
+                    <strong>21/04 à 20/05</strong><img alt="" class="img_signos" id="img_touro" width="90" height="90" src="img/touro-min.svg" />
+                </div>
+
+                <div class="Grid-cell" id="gemeos" onmouseover="signoescolhido('GÊMEOS')" onmouseout="restartcolor()" onclick="clicksigno('gemeos')">
+                    <strong>21/05 à 20/06</strong><img alt="" class="img_signos" id="img_gemeos" width="90" height="90" src="img/gemeos-min.svg" />
+                </div>
+
+                <div class="Grid-cell" id="cancer" onmouseover="signoescolhido('CANCER')" onmouseout="restartcolor()" onclick="clicksigno('cancer')">
+                    <strong>21/06 a 21/07</strong><img alt="" class="img_signos" id="img_cancer" width="90" height="90" src="img/cancer-min.svg" />
+                </div>
+
+            </div>
+            <div style="padding: 0em 0em 1em;" class="Grid" id="linha2signos">
+
+                <div class="Grid-cell" id="leao" name="leao" onmouseover="signoescolhido('LEÃO')" onmouseout="restartcolor()" onclick="clicksigno('leao')">
+                    <strong>22/07 à 22/08</strong><img alt="" class="img_signos" id="img_leao" width="90" height="90" src="img/leao-min.svg" />
+                </div>
+                <div class="Grid-cell" id="virgem" onmouseover="signoescolhido('VIRGEM')" onmouseout="restartcolor()" onclick="clicksigno('virgem')">
+                    <strong>23/08 à 22/09</strong><img alt="" class="img_signos" id="img_virgem" width="90" height="90" src="img/virgem-min.svg" />
+                </div>
+                <div class="Grid-cell" id="libra" onmouseover="signoescolhido('LIBRA')" onmouseout="restartcolor()" onclick="clicksigno('libra')">
+                    <strong>23/09 à 22/10</strong><img alt="" class="img_signos" id="img_libra" width="90" height="90" src="img/libra-min.svg" />
+                </div>
+                <div class="Grid-cell" id="escorpiao" onmouseover="signoescolhido('ESCORPIÃO')" onmouseout="restartcolor()" onclick="clicksigno('escorpiao')">
+                    <strong>23/10 à 21/11</strong><img alt="" class="img_signos" id="img_escorpiao" width="90" height="90" src="img/escorpiao-min.svg" />
+                </div>
+                <div class="Grid-cell" id="sargitario" onmouseover="signoescolhido('SARGITÁRIO')" onmouseout="restartcolor()" onclick="clicksigno('sargitario')">
+                    <strong>22/11 à 21/12 </strong> <img alt="" class="img_signos" id="img_sargitario" width="90" height="90" src="img/sagitario-min.svg" />
+                </div>
+                <div class="Grid-cell" id="capricornio" onmouseover="signoescolhido('CAPRICÓRNIO')" onmouseout="restartcolor()" onclick="clicksigno('capricornio')">
+                    <strong>22/12 à 20/01</strong> <img alt="" class="img_signos" id="img_capricornio" width="90" height="90" src="img/capricornio-min.svg" />
+                </div>
+
+            </div>
+        </div>
+
+        <div id="solarescolhido"></div>
+        <div id="tx1"></div>
+
+        <div class="Grid" style="padding: 0em 0em 0em;" id="tres_datas_ascendentes" oncontextmenu="return false" ondragstart="return false" onkeydown="return validateKey(event)" onselectstart="return false"></div>
+
+
+        <div id="txt_signo">
+
+            <h2>HISTÓRIA DOS SIGNOS DO ZODÍACO / HORÓSCOPO</h2>
+
+            <p> O zodíaco ou signos, como alguns chamam, são um assunto que em uma roda de conversa qualquer, rende boas horas e dividem opiniões. Algumas pessoas preferem não acreditar, outros acreditam sem duvidas; mas a maioria das pessoas, em algum momento
+                da sua existência , já teve curiosidade sobre o assunto, mesmo que com muita relutância.</p>
+
+
+            <p>Qual a pessoa que jamais ouviu ou perguntou a famigerada indagação: - qual seu signo ?. Nós temos a resposta, talvez ninguém, ou você talvez nunca tenha prestado atenção as pessoas ao seu redor, ou nos questionamentos delas pense bem nisso.
+                É algo tão importante para algumas pessoas, que uma grande maioria, considera a resposta na hora de começar uma amizade, parceria ou até mesmo um relacionamento amoroso um grande indicio do que vai encontrar pela frente, levando a dar
+                mais interesse ou menos dependendo da resposta. Outros termos muito discutido e estudados como, solar, lua, paraíso astral, inferno astral, ascendente, estão ficando cada vez mais comuns com o passar do tempo, mas e como surgiu o zodíaco
+                e todos outros termos derivados?</p>
+            <br>
+
+            <h2>O ZODÍACO</h2>
+            <p>Aproximadamente no ano 500 a.C nasceu o horóscopo meio que da maneira que como conhecemos nos dias atuais, e misturava tanto filosofia grega, como ciência matemática egípcia, conhecimentos profundos de astrologia Babilônica que tem tradição
+                milenar, surgiu a ideia de zodíaco, que em grego significa círculo de animais, e faz alusão ao grande cinturão celeste que estão fixados no universo logo atrás de todo o trajeto do Sol. Cada signo representa uma das 12 constelações com
+                os respectivos nomes por onde o sol passa esse evento tem o nome de eclíptica.
+
+            </p>
+            <p> A ideia de horóscopo individual surgiu depois de um certo tempo e junto com tal ideia surgiu também outras formas de análises. De acordo com a data e a hora exata que uma pessoa nasceu, é possível traçar certas características pertinentes
+                a sua personalidade. Ademais, no começo da Era Cristã, foram atribuídas ao perfil de cada signo características relacionadas às estações do ano, mais algo que foi levado muito em consideração é que através da própria observação foi constatado
+                que certas peculiaridades como características de personalidade, temperamento de pessoas nascidas em um mesmo período eram similares em signos iguais.
+            </p>
+            <br>
+            <h2>O QUE É SIGNO SOLAR E ASCENDENTE ?</h2>
+
+            <h3>Signo Solar</h3>
+
+            <p>O signo solar ou o signo que esta na casa do sol ou por tras do sol quando voçê nasce, representa a vontade íntima, o potencial do ser, a essência, a determinação, a consciência. O padrao de identidade, a sia forma de expressão. O signo do
+                sol é a área de desenvolvimento mais importante do ser.
+            </p>
+            <br>
+            <h3>Signo Ascendente</h3>
+            <p>
+                O nascimento de um ser vivo em muitas filosofias é considerado um grande evento no mundo espiritual, em algumas culturas como algumas vertentes do budismo, acredita-se que a alma encarna no ser humano ou ser vivo nos primeiros suspiros e o signo ascendente
+                nada mais é o signo que se encontrava na linha do horizonte no momento exato em que o bebe respirou pela primeira vez, dito isto, é de grande importância a hora do nascimento que geralmente em quase toda sua maioria esta descrito na certidão
+                de nascimento em resumo a partir da hora do nascimento da pra saber o signo ou constelação e que nasceu junto com voçê assim como o sol nasce toda manha aproximadamente no mesmo horario no leste o ascendente influencia o corpo fisico e
+                a aparência, a "persona", e mostra de que forma nos apresentamos para o mundo exterior.
+
+            </p>
+            <br>
+            <br>
+            <h2>OS 4 ELEMENTOS</h2>
+            <P>Existem 4 Elementos o Fogo, Ar, Terra e Água, cada elemento contem 3 signos</P>
+            <img id="img" alt="ELEMENTOS" src="img/elementos.PNG">
+            <br>
+            <br>
+            <br>
+            <h2>ENERGIA/QUALIDADE DOS SIGNOS</h2>
+            <P>
+                O zodíaco possui doze signos e em um mapa astral existem doze casas. As casas, assim como os signos, são divididas em Angulares (equivale a Cardinal), Sucedentes (equivale a Fixo) e Cadentes (equivale a Mutável). Sendo assim, a energia do signo é dividida
+                em três grupos: Cardinal, Fixo e Mutável.
+            </P>
+            <br>
+            <img id="img" alt="ENERGIA" src="img/energia.PNG">
+            <br>
+
+            <h3>ENERGIA DO SIGNO – CARDINAL</h3>
+            <p>Os signos que possuem predominância Cardinal são Áries, Câncer, Libra e Capricórnio. Trata-se de uma energia muito ativa e iniciadora. Os signos que a compõem iniciam as estações e a qualidade que se destaca é o poder de ação. Quando se deparam
+                com um obstáculo, tendem a enfrenta-lo. Essa energia se volta para fora e para a resolução de problemas. Quando a Cardinal tem baixa manifestação no mapa astral, a pessoa pode ter dificuldade em iniciar novas coisas, baixa inovação e criatividade.
+                Quando há predominância da energia Cardinal, a tendência é que a pessoa queira viver tudo intensamente e não chega ao final das coisas, muitas vezes. Iniciativa e dinamismo são fortes características dos signos regidos pela energia Cardinal.
+                Veja como esta energia se manifesta em cada um dos signos que rege:</p>
+            <p>♈ Áries – os arianos possuem iniciativa pessoal em todos os âmbitos. São pessoas que não pensam muito antes de realizar aquilo que desejam.</p>
+            <p>♋ Câncer – a iniciativa dos cancerianos é voltada para os âmbitos sentimental e emocional. São muito ligados à família e valorizam suas relações.</p>
+            <p>♎ Libra – o libriano é um mediador nato. Sua iniciativa é voltada para o relacionamento com os outros.
+            </p>
+            <p>♑ Capricórnio – o capricorniano é muito ligado ao planejamento, à estabilidade financeira e profissional. Portanto, sua iniciativa é voltada para o trabalho.</p>
+            <br>
+
+            <h3>ENERGIA DO SIGNO – FIXO</h3>
+            <p>Os signos que possuem predominância em Fixo são Aquário, Escorpião, Leão e Touro. A energia é composta pelos signos que estão no meio da estação. Costumam trazer um comportamento conservador e resistente. Quando se deparam com algum obstáculo,
+                observam, esperam, pensam e depois o enfrentam. A energia Fixa se volta para o interior, resiste ao que vem do exterior. Os signos regidos por esta energia tendem a ser teimosos, o que os impede de enxergar a necessidade de mudança de
+                padrões que não funcionam. A persistência e a firmeza são qualidades destes signos. Quando esta energia tem baixa manifestação no mapa astral, as pessoas podem ter dificuldade em manter opiniões e ideias, além da falta de estabilidade.
+                Veja como esta energia se manifesta em cada um dos signos que rege:</p>
+            <p>♒ Aquário – os aquarianos têm notável habilidade para sustentar diferenças e ideias.</p>
+            <p>♏ Escorpião – os escorpianos são extremamente intuitivos. Confiam em suas convicções, mantém sensações e sentimentos.
+            </p>
+            <p>♌ Leão – os leoninos possuem personalidade forte, firmeza pessoal e conservam seus ideais.</p>
+            <p>♉ Touro – os taurinos são conservadores, buscam estabilidade e prezam por seus valores pessoais.</p>
+            <br>
+
+            <h3>ENERGIA DO SIGNO – MUTÁVEL</h3>
+            <p>Os signos que possuem predominância na energia Mutável são Gêmeos, Peixes, Sagitário e Virgem. A energia é composta por signos que estão no fim das estações e sua principal característica é a adaptabilidade. A energia Mutável é focada em renovação
+                e mudanças. É oposta à energia Fixa e sempre busca novas ideias e saídas. As pessoas regidas pela energia Mutável não fogem nem enfrentam um obstáculo, elas o contornam. São inquietas e estão sempre insatisfeitas, mudando algo em sua vida.
+                Não costumam ser muito firmes ao se posicionar perante aos outros. Quando esta energia tem baixa manifestação no mapa astral, as pessoas costumam ter dificuldade em se adaptar, aceitar as mudanças e se abrir para novas ideias. Veja como
+                esta energia se manifesta em cada um dos signos que rege:</p>
+            <p>♊ Gêmeos – os geminianos são volúveis, sempre mudam de ideia a respeito de tudo. São pessoas muito indecisas, mas extremamente adaptáveis à novas realidades.</p>
+            <p>♓ Peixes – os piscianos são muito sentimentais. A energia Mutável se manifesta na mudança constante de seus sentimentos e sensações.</p>
+            <p>♐ Sagitário – o sagitariano gosta de ser desafiado. Busca sempre novas metas para atingir.</p>
+            <p>♍ Virgem – o virginiano é detalhista, organizado. Está sempre em busca da perfeição, de uma forma incansável.
+            </p>
+            <br>
+            <br>
+            <br>
+            <br>
+
+            <h3></h3>
+
+
+
+        </div>
+    </div>
+
+</body>
+
+<script src="script.js">
+</script>
+
+</html>

@@ -1,0 +1,292 @@
+body {
+    background-color: rgb(252, 250, 240);
+    text-align: center;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: initial;
+    margin: 0;
+    padding: 0;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+}
+
+#conteiner {
+    text-align: center;
+    background-color: rgb(0, 0, 0);
+}
+
+#area {
+    /*top, esquerda, down*/
+    padding: 6pt 0pt 3pt;
+    background-color: grey;
+    -ms-transform: scale(1);
+    /* IE 9 */
+    -webkit-transform: scale(1);
+    /* Chrome, Safari, Opera */
+    transform: scale(1);
+}
+
+#linha1signos {
+    display: flex;
+    text-align: center;
+    align-self: center;
+    justify-content: center;
+}
+
+#linha2signos {
+    margin-top: 50pt;
+    display: flex;
+    text-align: center;
+    align-self: center;
+    justify-content: center;
+}
+
+#linha1signosdatas {
+    display: flex;
+    height: 40pt;
+    width: 600pt;
+}
+
+#linha2signosdatas {
+    display: flex;
+    height: 40pt;
+    width: 600pt;
+}
+
+#aquario {
+    width: 100pt;
+    height: 60pt;
+    padding: 6pt 3pt 3pt;
+    text-align: center;
+    cursor: pointer;
+}
+
+#peixes {
+    width: 100pt;
+    height: 60pt;
+    padding: 6pt 3pt 3pt;
+    text-align: center;
+    cursor: pointer;
+}
+
+#aries {
+    width: 100pt;
+    height: 60pt;
+    padding: 6pt 3pt 3pt;
+    text-align: center;
+    cursor: pointer;
+}
+
+#touro {
+    width: 100pt;
+    height: 60pt;
+    padding: 6pt 3pt 3pt;
+    text-align: center;
+    cursor: pointer;
+}
+
+#gemeos {
+    width: 100pt;
+    height: 60pt;
+    padding: 6pt 3pt 3pt;
+    text-align: center;
+    cursor: pointer;
+}
+
+#cancer {
+    width: 100pt;
+    height: 60pt;
+    padding: 6pt 3pt 3pt;
+    text-align: center;
+    cursor: pointer;
+}
+
+#leao {
+    width: 100pt;
+    height: 60pt;
+    padding: 6pt 3pt 3pt;
+    text-align: center;
+    cursor: pointer;
+}
+
+#virgem {
+    width: 100pt;
+    height: 60pt;
+    padding: 6pt 3pt 3pt;
+    text-align: center;
+    cursor: pointer;
+}
+
+#libra {
+    width: 100pt;
+    height: 60pt;
+    padding: 6pt 3pt 3pt;
+    text-align: center;
+    cursor: pointer;
+}
+
+#escorpiao {
+    width: 100pt;
+    height: 60pt;
+    padding: 6pt 3pt 3pt;
+    text-align: center;
+    cursor: pointer;
+}
+
+#sargitario {
+    width: 100pt;
+    height: 60pt;
+    padding: 6pt 3pt 3pt;
+    text-align: center;
+    cursor: pointer;
+}
+
+#capricornio {
+    width: 100pt;
+    height: 60pt;
+    padding: 6pt 3pt 3pt;
+    text-align: center;
+    cursor: pointer;
+}
+
+h1 {
+    color: black;
+    font-size: 40px;
+}
+
+label {
+    align-items: center;
+    margin: 12px 0;
+}
+
+#periodo {
+    border-radius: 33%;
+    font-size: xx-large;
+    margin: 10pt;
+    display: inline-table;
+    height: 50px;
+    width: 250px;
+    text-align: center;
+    vertical-align: middle;
+    line-height: 50px;
+    background-color: rgb(240, 181, 143);
+    padding: 15px 60px 15px;
+    cursor: pointer;
+}
+
+#tx1 {
+    margin-bottom: 33pt;
+    padding: 6px 1px 1px;
+    text-align: center;
+}
+
+#txt_signo {
+    margin-top: 200pt;
+    margin-right: 90pt;
+    margin-left: 90pt;
+    text-align: justify;
+    align-self: center;
+    justify-content: center;
+}
+
+#tresdatas_ascendentes {
+    text-align: center;
+}
+
+#hora {
+    margin-top: 33pt;
+    height: 50pt;
+    width: 200pt;
+    text-align: center;
+    justify-items: center;
+    font-size: 33pt;
+}
+
+#btn {
+    margin-top: 10pt;
+    height: 30pt;
+    width: 80pt;
+    text-align: center;
+    justify-items: center;
+    font-size: 20pt;
+}
+
+.img_signos {
+    width: 80pt;
+    height: 80pt;
+}
+
+#signosegundapag {
+    margin-top: 1pt;
+}
+
+#signosegundapag {
+    margin-top: 1pt;
+}
+
+#img_segundapag {
+    height: 100pt;
+    width: 100pt;
+}
+
+#solarf {
+    width: 100pt;
+    height: 60pt;
+    padding: 6pt 3pt 3pt;
+    text-align: center;
+}
+
+#ascf {
+    width: 100pt;
+    height: 60pt;
+    padding: 6pt 3pt 3pt;
+    text-align: center;
+}
+
+#solar {
+    align-items: center;
+    text-align: center;
+    margin-bottom: 50pt;
+}
+
+#img {
+    margin-left: 33pt;
+    width: 1000px;
+    align-items: center;
+    text-align: center;
+}
+
+p {
+    font-size: 18pt;
+}
+
+h2 {
+    font-size: 22pt;
+}
+
+h3 {
+    font-size: 18pt;
+}
+
+#txt_asc {
+    margin-top: 33pt;
+    margin-right: 90pt;
+    margin-left: 90pt;
+    text-align: justify;
+    align-self: center;
+    justify-content: center;
+}
+
+#txt_sol_asc {
+    margin-top: 33pt;
+    margin-right: 90pt;
+    margin-left: 90pt;
+    text-align: justify;
+    align-self: center;
+    justify-content: center;
+}
+
+h1#add {
+    font-size: 44pt;
+}
